@@ -54,8 +54,6 @@ top_hits_df <- data.frame(
   track_duration = unlist(lapply(tth$tracks$items, FUN = function(item) { item$track$duration_ms })),
   popularity = unlist(lapply(tth$tracks$items, FUN = function(item) { item$track$popularity }))
 )
-
-# Note that the tempo API endpoint is no longer supported by Spotify
 ```
 
 ```{r, generatesvgcircle}
@@ -230,7 +228,7 @@ html`<iframe class="custom-iframe" style="border-radius:12px; display: flex; jus
 <div style="background-color: #7D3C98; color: white; border-radius: 10px; padding: 10px; text-align: center; display: flex; align-items: center; justify-content: center; height: 100%;">
 
   <span style="font-size: 1vw; width: 100%;">
-    **Want to make a project like this?** This dashboard was inspired by [Melissa Van Bussel](https://www.melissavanbussel.com/) for [Posit's 2024 Table Contest](https://posit.co/blog/announcing-the-2024-table-contest/).<br> You can find a tutorial for this dashboard [here](https://melissavanbussel.github.io/spotify-dashboard) and you can find the code that powers this dashboard [here](https://github.com/melissavanbussel/spotify-dashboard).
+    **Want to make a project like this?** This dashboard was inspired by [Melissa Van Bussel](https://www.melissavanbussel.com/) for Posit's Table Contest.<br> You can find her tutorial [here](https://melissavanbussel.github.io/spotify-dashboard) and you can find the code that powers my version of the dashboard [here](https://github.com/econmaett/spotify-dashboard).
   </span>
 
 </div>
