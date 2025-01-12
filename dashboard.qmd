@@ -17,7 +17,7 @@ library(tidyverse)
 ```
 
 ```{r, printstarwars}
-head(starwars)
+paste0("My username is: ", Sys.getenv("MY_USERNAME"))
 ```
 
 
