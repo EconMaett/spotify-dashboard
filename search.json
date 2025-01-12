@@ -2,21 +2,11 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "spotify-dashboard",
+    "title": "Spotify Dashboard",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2",
+    "text": "This dashboard is based on Melissa van Bussen’s submission to the Posit PBC’s Table Contest. The interactive Quarto dashboard displays the “Today’s Top Songs” playlist from Spotify 🎵. The dashboard also includes an embedded Spotify web player, so you can hear the song directly in your browser! Although it’s got an interactive dropdown menu, it didn’t require a Shiny server – it’s all powered by Quarto + Observable JS + GitHub Actions + GitHub Pages. It updates itself automatically everyday at 9am, it was completely free to create and host, and it never needs to be run locally (unless you want to run it locally 😉).\n🔗 You can check out the original dashboard by clicking here\nI used the Table Contest as an excuse to teach myself some of the trickier concepts that have been on my “to learn” list for a while now. Specifically, I wanted to learn how to create interactive dashboards that didn’t rely on Shiny (I still ❤️ Shiny, but I also love automation and learning new things), how to make gt tables interactive using the cols_nanoplot function, and how to safely store passwords / API keys / etc. for my GitHub projects and do authentication as part of GitHub Actions workflows.",
     "crumbs": [
       "Home"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2",
-    "crumbs": [
-      "About"
     ]
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Today’s Top Hits – Spotify Dashboard</title>
+<title>Today’s Top Songs – Spotify Dashboard</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,15 +64,16 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./images/logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-43df0d6f53b733b42d37fa7808e17715.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-29e2c20b02301cfff04dc8050bf30c7e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-88c82b4d6a6b728230f79efd72f40d35.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-633d01c9815171d7e820435b1469af79.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-dashboard/quarto-dashboard.js"></script>
 <script src="site_libs/quarto-dashboard/stickythead.js"></script>
 <script src="site_libs/quarto-dashboard/datatables.min.js" kdttablesentinel="true"></script>
@@ -74,6 +109,20 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+<script type="ojs-define">
+
+{"contents":[{"name":"top_hits_ojs","value":{"song_name":["APT.","Bad Dreams","NUEVAYoL","Guess featuring billie eilish","Beautiful Things","BIRDS OF A FEATHER","ALL MY LOVE","Die With A Smile","No One Noticed","That’s So True","toxic till the end","Pretty Slowly","luther (with sza)","NEW DROP","BMF","The Emptiness Machine","Messy","PORNSTAR","Good Luck, Babe!","Burning Down (with Joe Jonas)","Timeless (with Playboi Carti)","i like the way you kiss me","Taste","DEGENERE 👑 (feat. benny blanco)","Hello Miss Johnson","Strategy (feat. Megan Thee Stallion)","Bundle By Bundle","Diet Pepsi","Are You Even Real (feat. Givēon)","Sympathy is a knife featuring ariana grande","DENIAL IS A RIVER","Pressure","fancy","No Pole","Apple","Never Going Home Tonight (feat. Madison Love)","we can't be friends (wait for your love)","Forever Young","Sailor Song","Pink Skies","The Door","A Bar Song (Tipsy)","Austin (Boots Stop Workin')","Chill Bae","Gang Baby","Illusion","Indigo (feat. Avery Anna)","I Don't Wanna Wait","Lose Control","Stumblin' In","Love Me Not","KEHLANI","365","Kisses (feat. bbyclose)","Slow It Down","WE PRAY - Single Version","Mamushi (feat. Yuki Chiba)","Whiplash","one of wun","Thick Of It (feat. Trippie Redd)","Houdini","Scared To Start"],"song_id":["4wJ5Qq0jBN4ajy7ouZIV1c","3nHuKdFJZm78CoeBnDcFKe","5TFD2bmFKGhoCRbX61nXY5","0IsIY8pfu1yaGkPUD7pkDx","3xkHsmpQCBMytMJNiDf3Ii","6dOtVTDdiauQNBQEDOtlAB","6iYxkBHyMpsgVxUgfy5fSx","2plbrEY59IikOBgBGLjaoe","3siwsiaEoU4Kuuc9WKMUy5","7ne4VBA60CxGM75vw0EYad","1z5ebC9238uGoBgzYyvGpQ","1QxxBUAx42J8pIFYJJR880","2CGNAOSuO1MEFCbBRgUzjd","2c7z5oRcPBbqRaBY2mLWcf","3U3hFkMr0Q90pD24EkE3Pr","2PnlsTsOTLE5jnBnNe2K0A","3SKH53SPQbEnZR4cJPVaz2","0IVAYMUDvpzFxIEuGc71SM","0WbMK4wrZ1wFSty9F7FCgu","3diSxgK7bRIZzqu5IqFgd1","1Es7AUAhQvapIcoh3qMKDL","2GxrNKugF82CnoRFbQfzPf","1d7Ptw3qYcfpdLNL5REhtJ","4xISUrw0t2elabEhKrtAJ0","6gH1UKDAhWS6qXzKXB4wuY","5zQUndaoBtXJ10SsApqtvw","2gtg4jTNUqC4akFqWZZXcV","6MzofobZt2dm0Kf1hTThFz","4ZO4HvFADvujrrEidSatEC","3nQ24dxqvxZEVwlHTeuLz0","1eTaznNW4Xxtx9za2SMTXB","1ubTFuP9rXCYzYQM7jUoWM","7J5GcAbZ2rsWk2BzZDVog1","0eaVIYo2zeOaGJeqZ5TwYz","19RybK6XDbAVpcdxSbZL1o","7K1BLb6MpvKuGEPpHw35mO","51ZQ1vr10ffzbwIjDCwqm4","3bg2qahpZmsg5wV2EMPXIk","2262bWmqomIaJXwCRHr13j","4ZJ4vzLQekI0WntDbanNC7","3dj4wgM3cPeuLwMNHDuBon","2FQrifJ1N335Ljm3TjTVVf","2uqYupMHANxnwgeiXTZXzd","4ppKM7xnkSAwSyKqD4QTY4","76Ku9OBFK1NjMylR8r4WLK","5q0EXnBYyeCdXD72FzJxH0","1KZG1H1OCugGqIRmk1wF9m","331l3xABO0HMr1Kkyh2LZq","6usohdchdzW9oML7VC4Uhk","0h3Xy4V4apMraB5NuM8U7Z","4WFgvKVfEhb3IUAFGrutTR","2hrycoFU1mZw6YPvMcn8yC","5h68SoVFGleijCtjEja3xG","1bJRd2ey6ER7neSxZwYdAG","51eSHglvG1RJXtL3qI5trr","2sKHevALE8DKDkwEo04Pbh","5b3XJ1pjrHO5JtY2PcTjnI","3coRPMnFg2dJcPu5RMloa9","4Na2HfNSr58chvfX69fy36","1xmvq1fYLs9TEgikaFilGW","6D8y7Bck8h11byRY88Pt2z","3Pbp7cUCx4d3OAkZSCoNvn"],"artist_name":["ROSÉ","Teddy Swims","Bad Bunny","Charli xcx","Benson Boone","Billie Eilish","Coldplay","Lady Gaga","The Marías","Gracie Abrams","ROSÉ","Benson Boone","Kendrick Lamar","Don Toliver","SZA","Linkin Park","Lola Young","Nessa Barrett","Chappell Roan","Alex Warren","The Weeknd","Artemas","Sabrina Carpenter","Myke Towers","Jack Harlow","TWICE","Burna Boy","Addison Rae","Teddy Swims","Charli xcx","Doechii","RÜFÜS DU SOL","Artemas","Don Toliver","Charli xcx","David Guetta","Ariana Grande","David Guetta","Gigi Perez","Zach Bryan","Teddy Swims","Shaboozey","Dasha","Lil Uzi Vert","NLE Choppa","Dua Lipa","Sam Barber","David Guetta","Teddy Swims","CYRIL","Ravyn Lenae","Jordan Adetunji","Charli xcx","BL3SS","Benson Boone","Coldplay","Megan Thee Stallion","aespa","Gunna","KSI","Dua Lipa","Michael Marcagi"],"album_art":["https://i.scdn.co/image/ab67616d0000b2735074bd0894cb1340b8d8a678","https://i.scdn.co/image/ab67616d0000b273de4b0388cb6e5267132a07bc","https://i.scdn.co/image/ab67616d0000b273bbd45c8d36e0e045ef640411","https://i.scdn.co/image/ab67616d0000b27355a1e72ba425c60a02a9bb47","https://i.scdn.co/image/ab67616d0000b273cc04ff3e70e146ba9abacf40","https://i.scdn.co/image/ab67616d0000b27371d62ea7ea8a5be92d3c1f62","https://i.scdn.co/image/ab67616d0000b27309ba52a5116e0c3e8461f58b","https://i.scdn.co/image/ab67616d0000b27382ea2e9e1858aa012c57cd45","https://i.scdn.co/image/ab67616d0000b2734d070fdf58fad8c54c5beb85","https://i.scdn.co/image/ab67616d0000b2731dac3694b3289cd903cb3acf","https://i.scdn.co/image/ab67616d0000b2735074bd0894cb1340b8d8a678","https://i.scdn.co/image/ab67616d0000b273b42f7c00cad0723ad163292f","https://i.scdn.co/image/ab67616d0000b27309d6ed214f03fbb663e46531","https://i.scdn.co/image/ab67616d0000b273c800e1a4a237cf8f085183c5","https://i.scdn.co/image/ab67616d0000b2737f5a318e3ff35defa8d0e4af","https://i.scdn.co/image/ab67616d0000b273c0db065619ed208515412917","https://i.scdn.co/image/ab67616d0000b273a0cb974834e04f46b63b99a8","https://i.scdn.co/image/ab67616d0000b2738d345d8baf0c3899501a4bb3","https://i.scdn.co/image/ab67616d0000b27391b4bc7c88d91a42e0f3a8b7","https://i.scdn.co/image/ab67616d0000b2732fa3078d30095db125d905ec","https://i.scdn.co/image/ab67616d0000b27394f662ef3b5677376d8a78d4","https://i.scdn.co/image/ab67616d0000b273e67611dbbf69a90d0b6cb738","https://i.scdn.co/image/ab67616d0000b2735e1ec3f6b114e4e4924f006f","https://i.scdn.co/image/ab67616d0000b27380de639ebda5b64a53dbab5d","https://i.scdn.co/image/ab67616d0000b2738ad20aef4c717994ec4ede86","https://i.scdn.co/image/ab67616d0000b273acf8ff27be32aec99d6c99a0","https://i.scdn.co/image/ab67616d0000b2736ed4e3321895cba2133e50a2","https://i.scdn.co/image/ab67616d0000b2734e5a5862355a5e953549292b","https://i.scdn.co/image/ab67616d0000b273f5ac5b7a18587bcd0cddd886","https://i.scdn.co/image/ab67616d0000b27355a1e72ba425c60a02a9bb47","https://i.scdn.co/image/ab67616d0000b273b245099fe26319344ddf6054","https://i.scdn.co/image/ab67616d0000b2736a8a6ad5453f5d19ec4295f9","https://i.scdn.co/image/ab67616d0000b273a5d1584c74776a69ad4991cc","https://i.scdn.co/image/ab67616d0000b273f5e27c2aa0b110c2b6611577","https://i.scdn.co/image/ab67616d0000b27388e3822cccfb8f2832c70c2e","https://i.scdn.co/image/ab67616d0000b273a2f04cd16c327c6aa04be8c1","https://i.scdn.co/image/ab67616d0000b2738b58d20f1b77295730db15b4","https://i.scdn.co/image/ab67616d0000b273417f8c5927888d7ee97cb05a","https://i.scdn.co/image/ab67616d0000b273e6065f209e0a01986206bd53","https://i.scdn.co/image/ab67616d0000b2731a2c9ac2d39bc5c2e22b9555","https://i.scdn.co/image/ab67616d0000b2731a0323cc23419360a34a3ace","https://i.scdn.co/image/ab67616d0000b27380d86d636244b72a3a1eede2","https://i.scdn.co/image/ab67616d0000b2734ccf88b66e04cfd247f287eb","https://i.scdn.co/image/ab67616d0000b2730e4e16d910115fead3e83496","https://i.scdn.co/image/ab67616d0000b273fb769724a2ee34b9f4ba1c76","https://i.scdn.co/image/ab67616d0000b273778c1e4660aa23f6728b32a1","https://i.scdn.co/image/ab67616d0000b273c944a2c490ed24e29eef5119","https://i.scdn.co/image/ab67616d0000b2732f479a6c1825c1f29e0a3d49","https://i.scdn.co/image/ab67616d0000b2731d856e66d33e22746c21a09c","https://i.scdn.co/image/ab67616d0000b2739a903819d8a5d3c80c47734c","https://i.scdn.co/image/ab67616d0000b273ef985ba96e76a9574cc68a30","https://i.scdn.co/image/ab67616d0000b273f2cd132495d61b0da6a900d2","https://i.scdn.co/image/ab67616d0000b27388e3822cccfb8f2832c70c2e","https://i.scdn.co/image/ab67616d0000b2733ba70f49a78d818fc0758667","https://i.scdn.co/image/ab67616d0000b273cc04ff3e70e146ba9abacf40","https://i.scdn.co/image/ab67616d0000b2738009ae03e4e7d759a521c7e7","https://i.scdn.co/image/ab67616d0000b2732538afd3580d0424bbe28a01","https://i.scdn.co/image/ab67616d0000b2736eb604294f8f58c9078f58b1","https://i.scdn.co/image/ab67616d0000b273c67636f3021f5869095c0fc5","https://i.scdn.co/image/ab67616d0000b2734b8b52a487c842534619501a","https://i.scdn.co/image/ab67616d0000b273778c1e4660aa23f6728b32a1","https://i.scdn.co/image/ab67616d0000b27351ef67c49732e45cd2b26fbe"],"track_duration":[169917,184577,183685,143330,180304,210373,222647,251667,236906,166300,156685,261420,177598,217333,180746,190427,284068,149440,218423,179437,256000,142514,157279,130880,164747,201760,176000,169697,147702,154126,159586,279346,125943,187613,151739,164285,228639,156923,211978,194920,212648,171291,171782,138323,138180,188143,286634,149667,210688,213363,213466,122360,203618,138246,161831,233406,156988,183226,144000,160842,185917,159636],"popularity":[90,87,87,81,87,97,72,100,86,96,88,74,87,84,87,84,87,77,92,74,92,83,79,78,76,81,69,85,65,73,82,57,69,86,82,76,87,80,93,84,86,86,86,72,82,75,82,84,81,84,63,83,76,75,84,73,77,78,82,76,83,83]}}]}
+
+</script>
+
+<script type="ojs-define">
+
+{"contents":[{"name":"top_hits_ojs","value":{"song_name":["APT.","Bad Dreams","NUEVAYoL","Guess featuring billie eilish","Beautiful Things","BIRDS OF A FEATHER","ALL MY LOVE","Die With A Smile","No One Noticed","That’s So True","toxic till the end","Pretty Slowly","luther (with sza)","NEW DROP","BMF","The Emptiness Machine","Messy","PORNSTAR","Good Luck, Babe!","Burning Down (with Joe Jonas)","Timeless (with Playboi Carti)","i like the way you kiss me","Taste","DEGENERE 👑 (feat. benny blanco)","Hello Miss Johnson","Strategy (feat. Megan Thee Stallion)","Bundle By Bundle","Diet Pepsi","Are You Even Real (feat. Givēon)","Sympathy is a knife featuring ariana grande","DENIAL IS A RIVER","Pressure","fancy","No Pole","Apple","Never Going Home Tonight (feat. Madison Love)","we can't be friends (wait for your love)","Forever Young","Sailor Song","Pink Skies","The Door","A Bar Song (Tipsy)","Austin (Boots Stop Workin')","Chill Bae","Gang Baby","Illusion","Indigo (feat. Avery Anna)","I Don't Wanna Wait","Lose Control","Stumblin' In","Love Me Not","KEHLANI","365","Kisses (feat. bbyclose)","Slow It Down","WE PRAY - Single Version","Mamushi (feat. Yuki Chiba)","Whiplash","one of wun","Thick Of It (feat. Trippie Redd)","Houdini","Scared To Start"],"song_id":["4wJ5Qq0jBN4ajy7ouZIV1c","3nHuKdFJZm78CoeBnDcFKe","5TFD2bmFKGhoCRbX61nXY5","0IsIY8pfu1yaGkPUD7pkDx","3xkHsmpQCBMytMJNiDf3Ii","6dOtVTDdiauQNBQEDOtlAB","6iYxkBHyMpsgVxUgfy5fSx","2plbrEY59IikOBgBGLjaoe","3siwsiaEoU4Kuuc9WKMUy5","7ne4VBA60CxGM75vw0EYad","1z5ebC9238uGoBgzYyvGpQ","1QxxBUAx42J8pIFYJJR880","2CGNAOSuO1MEFCbBRgUzjd","2c7z5oRcPBbqRaBY2mLWcf","3U3hFkMr0Q90pD24EkE3Pr","2PnlsTsOTLE5jnBnNe2K0A","3SKH53SPQbEnZR4cJPVaz2","0IVAYMUDvpzFxIEuGc71SM","0WbMK4wrZ1wFSty9F7FCgu","3diSxgK7bRIZzqu5IqFgd1","1Es7AUAhQvapIcoh3qMKDL","2GxrNKugF82CnoRFbQfzPf","1d7Ptw3qYcfpdLNL5REhtJ","4xISUrw0t2elabEhKrtAJ0","6gH1UKDAhWS6qXzKXB4wuY","5zQUndaoBtXJ10SsApqtvw","2gtg4jTNUqC4akFqWZZXcV","6MzofobZt2dm0Kf1hTThFz","4ZO4HvFADvujrrEidSatEC","3nQ24dxqvxZEVwlHTeuLz0","1eTaznNW4Xxtx9za2SMTXB","1ubTFuP9rXCYzYQM7jUoWM","7J5GcAbZ2rsWk2BzZDVog1","0eaVIYo2zeOaGJeqZ5TwYz","19RybK6XDbAVpcdxSbZL1o","7K1BLb6MpvKuGEPpHw35mO","51ZQ1vr10ffzbwIjDCwqm4","3bg2qahpZmsg5wV2EMPXIk","2262bWmqomIaJXwCRHr13j","4ZJ4vzLQekI0WntDbanNC7","3dj4wgM3cPeuLwMNHDuBon","2FQrifJ1N335Ljm3TjTVVf","2uqYupMHANxnwgeiXTZXzd","4ppKM7xnkSAwSyKqD4QTY4","76Ku9OBFK1NjMylR8r4WLK","5q0EXnBYyeCdXD72FzJxH0","1KZG1H1OCugGqIRmk1wF9m","331l3xABO0HMr1Kkyh2LZq","6usohdchdzW9oML7VC4Uhk","0h3Xy4V4apMraB5NuM8U7Z","4WFgvKVfEhb3IUAFGrutTR","2hrycoFU1mZw6YPvMcn8yC","5h68SoVFGleijCtjEja3xG","1bJRd2ey6ER7neSxZwYdAG","51eSHglvG1RJXtL3qI5trr","2sKHevALE8DKDkwEo04Pbh","5b3XJ1pjrHO5JtY2PcTjnI","3coRPMnFg2dJcPu5RMloa9","4Na2HfNSr58chvfX69fy36","1xmvq1fYLs9TEgikaFilGW","6D8y7Bck8h11byRY88Pt2z","3Pbp7cUCx4d3OAkZSCoNvn"],"artist_name":["ROSÉ","Teddy Swims","Bad Bunny","Charli xcx","Benson Boone","Billie Eilish","Coldplay","Lady Gaga","The Marías","Gracie Abrams","ROSÉ","Benson Boone","Kendrick Lamar","Don Toliver","SZA","Linkin Park","Lola Young","Nessa Barrett","Chappell Roan","Alex Warren","The Weeknd","Artemas","Sabrina Carpenter","Myke Towers","Jack Harlow","TWICE","Burna Boy","Addison Rae","Teddy Swims","Charli xcx","Doechii","RÜFÜS DU SOL","Artemas","Don Toliver","Charli xcx","David Guetta","Ariana Grande","David Guetta","Gigi Perez","Zach Bryan","Teddy Swims","Shaboozey","Dasha","Lil Uzi Vert","NLE Choppa","Dua Lipa","Sam Barber","David Guetta","Teddy Swims","CYRIL","Ravyn Lenae","Jordan Adetunji","Charli xcx","BL3SS","Benson Boone","Coldplay","Megan Thee Stallion","aespa","Gunna","KSI","Dua Lipa","Michael Marcagi"],"album_art":["https://i.scdn.co/image/ab67616d0000b2735074bd0894cb1340b8d8a678","https://i.scdn.co/image/ab67616d0000b273de4b0388cb6e5267132a07bc","https://i.scdn.co/image/ab67616d0000b273bbd45c8d36e0e045ef640411","https://i.scdn.co/image/ab67616d0000b27355a1e72ba425c60a02a9bb47","https://i.scdn.co/image/ab67616d0000b273cc04ff3e70e146ba9abacf40","https://i.scdn.co/image/ab67616d0000b27371d62ea7ea8a5be92d3c1f62","https://i.scdn.co/image/ab67616d0000b27309ba52a5116e0c3e8461f58b","https://i.scdn.co/image/ab67616d0000b27382ea2e9e1858aa012c57cd45","https://i.scdn.co/image/ab67616d0000b2734d070fdf58fad8c54c5beb85","https://i.scdn.co/image/ab67616d0000b2731dac3694b3289cd903cb3acf","https://i.scdn.co/image/ab67616d0000b2735074bd0894cb1340b8d8a678","https://i.scdn.co/image/ab67616d0000b273b42f7c00cad0723ad163292f","https://i.scdn.co/image/ab67616d0000b27309d6ed214f03fbb663e46531","https://i.scdn.co/image/ab67616d0000b273c800e1a4a237cf8f085183c5","https://i.scdn.co/image/ab67616d0000b2737f5a318e3ff35defa8d0e4af","https://i.scdn.co/image/ab67616d0000b273c0db065619ed208515412917","https://i.scdn.co/image/ab67616d0000b273a0cb974834e04f46b63b99a8","https://i.scdn.co/image/ab67616d0000b2738d345d8baf0c3899501a4bb3","https://i.scdn.co/image/ab67616d0000b27391b4bc7c88d91a42e0f3a8b7","https://i.scdn.co/image/ab67616d0000b2732fa3078d30095db125d905ec","https://i.scdn.co/image/ab67616d0000b27394f662ef3b5677376d8a78d4","https://i.scdn.co/image/ab67616d0000b273e67611dbbf69a90d0b6cb738","https://i.scdn.co/image/ab67616d0000b2735e1ec3f6b114e4e4924f006f","https://i.scdn.co/image/ab67616d0000b27380de639ebda5b64a53dbab5d","https://i.scdn.co/image/ab67616d0000b2738ad20aef4c717994ec4ede86","https://i.scdn.co/image/ab67616d0000b273acf8ff27be32aec99d6c99a0","https://i.scdn.co/image/ab67616d0000b2736ed4e3321895cba2133e50a2","https://i.scdn.co/image/ab67616d0000b2734e5a5862355a5e953549292b","https://i.scdn.co/image/ab67616d0000b273f5ac5b7a18587bcd0cddd886","https://i.scdn.co/image/ab67616d0000b27355a1e72ba425c60a02a9bb47","https://i.scdn.co/image/ab67616d0000b273b245099fe26319344ddf6054","https://i.scdn.co/image/ab67616d0000b2736a8a6ad5453f5d19ec4295f9","https://i.scdn.co/image/ab67616d0000b273a5d1584c74776a69ad4991cc","https://i.scdn.co/image/ab67616d0000b273f5e27c2aa0b110c2b6611577","https://i.scdn.co/image/ab67616d0000b27388e3822cccfb8f2832c70c2e","https://i.scdn.co/image/ab67616d0000b273a2f04cd16c327c6aa04be8c1","https://i.scdn.co/image/ab67616d0000b2738b58d20f1b77295730db15b4","https://i.scdn.co/image/ab67616d0000b273417f8c5927888d7ee97cb05a","https://i.scdn.co/image/ab67616d0000b273e6065f209e0a01986206bd53","https://i.scdn.co/image/ab67616d0000b2731a2c9ac2d39bc5c2e22b9555","https://i.scdn.co/image/ab67616d0000b2731a0323cc23419360a34a3ace","https://i.scdn.co/image/ab67616d0000b27380d86d636244b72a3a1eede2","https://i.scdn.co/image/ab67616d0000b2734ccf88b66e04cfd247f287eb","https://i.scdn.co/image/ab67616d0000b2730e4e16d910115fead3e83496","https://i.scdn.co/image/ab67616d0000b273fb769724a2ee34b9f4ba1c76","https://i.scdn.co/image/ab67616d0000b273778c1e4660aa23f6728b32a1","https://i.scdn.co/image/ab67616d0000b273c944a2c490ed24e29eef5119","https://i.scdn.co/image/ab67616d0000b2732f479a6c1825c1f29e0a3d49","https://i.scdn.co/image/ab67616d0000b2731d856e66d33e22746c21a09c","https://i.scdn.co/image/ab67616d0000b2739a903819d8a5d3c80c47734c","https://i.scdn.co/image/ab67616d0000b273ef985ba96e76a9574cc68a30","https://i.scdn.co/image/ab67616d0000b273f2cd132495d61b0da6a900d2","https://i.scdn.co/image/ab67616d0000b27388e3822cccfb8f2832c70c2e","https://i.scdn.co/image/ab67616d0000b2733ba70f49a78d818fc0758667","https://i.scdn.co/image/ab67616d0000b273cc04ff3e70e146ba9abacf40","https://i.scdn.co/image/ab67616d0000b2738009ae03e4e7d759a521c7e7","https://i.scdn.co/image/ab67616d0000b2732538afd3580d0424bbe28a01","https://i.scdn.co/image/ab67616d0000b2736eb604294f8f58c9078f58b1","https://i.scdn.co/image/ab67616d0000b273c67636f3021f5869095c0fc5","https://i.scdn.co/image/ab67616d0000b2734b8b52a487c842534619501a","https://i.scdn.co/image/ab67616d0000b273778c1e4660aa23f6728b32a1","https://i.scdn.co/image/ab67616d0000b27351ef67c49732e45cd2b26fbe"],"track_duration":[169917,184577,183685,143330,180304,210373,222647,251667,236906,166300,156685,261420,177598,217333,180746,190427,284068,149440,218423,179437,256000,142514,157279,130880,164747,201760,176000,169697,147702,154126,159586,279346,125943,187613,151739,164285,228639,156923,211978,194920,212648,171291,171782,138323,138180,188143,286634,149667,210688,213363,213466,122360,203618,138246,161831,233406,156988,183226,144000,160842,185917,159636],"popularity":[90,87,87,81,87,97,72,100,86,96,88,74,87,84,87,84,87,77,92,74,92,83,79,78,76,81,69,85,65,73,82,57,69,86,82,76,87,80,93,84,86,86,86,72,82,75,82,84,81,84,63,83,76,75,84,73,77,78,82,76,83,83]}}]}
+
+</script>
+
 
 
 </head>
@@ -91,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="navbar-brand-container">       
     <a href="#"><img src="images/logo.png" alt="" class="navbar-logo d-inline-block"></a>
       <div class="navbar-title">
-        <div class="navbar-title-text"><a href="#">Today’s Top Hits</a></div>
+        <div class="navbar-title-text"><a href="#">Today’s Top Songs</a></div>
         
         
       </div>
@@ -106,70 +155,940 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
 <!-- main -->
 
-<div class="bslib-grid-item html-fill-item bslib-grid" data-layout="fill" style="display: grid; grid-template-columns: minmax(3em, 35fr) minmax(3em, 65fr);
+<div class="bslib-grid-item html-fill-item bslib-grid" data-layout="fill" style="display: grid; grid-template-columns: minmax(3em, 35fr) minmax(3em, 65fr) minmax(3em, 65fr);
 grid-auto-rows: minmax(0, 1fr);">
-<div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
-<div class="card bslib-card html-fill-container" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="card-body html-fill-item html-fill-container">
-<p>Placeholder text for column 1</p>
+<div class="cell-output-display html-fill-item html-fill-container">
+<div id="custom" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;" class="html-fill-item html-fill-container">
+<style>#custom table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#custom thead, #custom tbody, #custom tfoot, #custom tr, #custom td, #custom th {
+  border-style: none;
+}
+
+#custom p {
+  margin: 0;
+  padding: 0;
+}
+
+#custom .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #191414;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0);
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: rgba(255, 255, 255, 0);
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#custom .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#custom .gt_title {
+  color: #FFFFFF;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #191414;
+  border-bottom-width: 0;
+}
+
+#custom .gt_subtitle {
+  color: #FFFFFF;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #191414;
+  border-top-width: 0;
+}
+
+#custom .gt_heading {
+  background-color: #191414;
+  text-align: center;
+  border-bottom-color: #191414;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#custom .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#custom .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: rgba(255, 255, 255, 0);
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#custom .gt_col_heading {
+  color: #FFFFFF;
+  background-color: #191414;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#custom .gt_column_spanner_outer {
+  color: #FFFFFF;
+  background-color: #191414;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#custom .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#custom .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#custom .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: rgba(255, 255, 255, 0);
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#custom .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#custom .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #FFFFFF;
+  background-color: #191414;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#custom .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #FFFFFF;
+  background-color: #191414;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#custom .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#custom .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#custom .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: rgba(255, 255, 255, 0);
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#custom .gt_stub {
+  color: #FFFFFF;
+  background-color: #191414;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#custom .gt_stub_row_group {
+  color: #FFFFFF;
+  background-color: #191414;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#custom .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#custom .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#custom .gt_summary_row {
+  color: #FFFFFF;
+  background-color: #191414;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#custom .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#custom .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#custom .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#custom .gt_grand_summary_row {
+  color: #FFFFFF;
+  background-color: #191414;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#custom .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#custom .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#custom .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#custom .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: rgba(255, 255, 255, 0);
+}
+
+#custom .gt_footnotes {
+  color: #FFFFFF;
+  background-color: #282828;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#custom .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#custom .gt_sourcenotes {
+  color: #FFFFFF;
+  background-color: #282828;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#custom .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#custom .gt_left {
+  text-align: left;
+}
+
+#custom .gt_center {
+  text-align: center;
+}
+
+#custom .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#custom .gt_font_normal {
+  font-weight: normal;
+}
+
+#custom .gt_font_bold {
+  font-weight: bold;
+}
+
+#custom .gt_font_italic {
+  font-style: italic;
+}
+
+#custom .gt_super {
+  font-size: 65%;
+}
+
+#custom .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#custom .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#custom .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#custom .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#custom .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#custom .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#custom .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#custom .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#custom div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+
+table tr:nth-child(odd) {
+  background-color: #282828;
+}
+
+table tr:hover {
+  background-color: #383838;
+}
+
+.cell-output-display {
+  overflow-x: unset !important;
+}
+
+div#custom {
+  overflow-x: unset !important;
+  overflow-y: unset !important;
+}
+
+#custom .gt_col_heading {
+  position: sticky !important;
+  top: -5px !important;
+  z-index: 10 !important;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="album_art"><span data-qmd-base64="PHN0cm9uZz5Tb25nPC9zdHJvbmc+"><span class="gt_from_md"><strong>Song</strong></span></span></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="song_name"></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="artist_name"><span data-qmd-base64="PHN0cm9uZz5BcnRpc3Q8L3N0cm9uZz4="><span class="gt_from_md"><strong>Artist</strong></span></span></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="track_duration"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewbox="0,0,255.998,255.998"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12,2c-5.523,0 -10,4.477 -10,10c0,5.523 4.477,10 10,10c5.523,0 10,-4.477 10,-10c0,-5.523 -4.477,-10 -10,-10zM14.586,16l-3.293,-3.293c-0.188,-0.188 -0.293,-0.442 -0.293,-0.707v-5c0,-0.552 0.448,-1 1,-1v0c0.552,0 1,0.448 1,1v4.586l3,3c0.39,0.39 0.39,1.024 0,1.414v0c-0.39,0.39 -1.024,0.39 -1.414,0z"></path></g></g></svg></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="popularity"><span data-qmd-base64="PHN0cm9uZz5Qb3B1bGFyaXR5PC9zdHJvbmc+"><span class="gt_from_md"><strong>Popularity</strong></span></span><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2735074bd0894cb1340b8d8a678" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">APT.</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">ROSÉ</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:50</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="47" width="47"><circle cx="23.5" cy="23.5" r="23.5" stroke="none" stroke-width="0" fill="#5BC43F"></circle><text class="circle-text" x="23.5" y="23.5" font-size="14.1" fill="white" text-anchor="middle" dy=".3em">90</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273de4b0388cb6e5267132a07bc" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Bad Dreams</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Teddy Swims</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:05</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="46.1" width="46.1"><circle cx="23.05" cy="23.05" r="23.05" stroke="none" stroke-width="0" fill="#6EC739"></circle><text class="circle-text" x="23.05" y="23.05" font-size="13.83" fill="white" text-anchor="middle" dy=".3em">87</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273bbd45c8d36e0e045ef640411" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">NUEVAYoL</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Bad Bunny</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:04</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="46.1" width="46.1"><circle cx="23.05" cy="23.05" r="23.05" stroke="none" stroke-width="0" fill="#6EC739"></circle><text class="circle-text" x="23.05" y="23.05" font-size="13.83" fill="white" text-anchor="middle" dy=".3em">87</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b27355a1e72ba425c60a02a9bb47" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Guess featuring billie eilish</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Charli xcx</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:23</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="44.3" width="44.3"><circle cx="22.15" cy="22.15" r="22.15" stroke="none" stroke-width="0" fill="#93CE2D"></circle><text class="circle-text" x="22.15" y="22.15" font-size="13.29" fill="white" text-anchor="middle" dy=".3em">81</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273cc04ff3e70e146ba9abacf40" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Beautiful Things</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Benson Boone</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:00</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="46.1" width="46.1"><circle cx="23.05" cy="23.05" r="23.05" stroke="none" stroke-width="0" fill="#6EC739"></circle><text class="circle-text" x="23.05" y="23.05" font-size="13.83" fill="white" text-anchor="middle" dy=".3em">87</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b27371d62ea7ea8a5be92d3c1f62" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">BIRDS OF A FEATHER</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Billie Eilish</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:30</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="49.1" width="49.1"><circle cx="24.55" cy="24.55" r="24.55" stroke="none" stroke-width="0" fill="#2FBC4D"></circle><text class="circle-text" x="24.55" y="24.55" font-size="14.73" fill="white" text-anchor="middle" dy=".3em">97</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b27309ba52a5116e0c3e8461f58b" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">ALL MY LOVE</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Coldplay</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:43</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="41.6" width="41.6"><circle cx="20.8" cy="20.8" r="20.8" stroke="none" stroke-width="0" fill="#CBD81B"></circle><text class="circle-text" x="20.8" y="20.8" font-size="12.48" fill="white" text-anchor="middle" dy=".3em">72</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b27382ea2e9e1858aa012c57cd45" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Die With A Smile</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Lady Gaga</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">4:12</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="50" width="50"><circle cx="25" cy="25" r="25" stroke="none" stroke-width="0" fill="#1DB954"></circle><text class="circle-text" x="25" y="25" font-size="15" fill="white" text-anchor="middle" dy=".3em">100</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2734d070fdf58fad8c54c5beb85" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">No One Noticed</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">The Marías</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:57</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="45.8" width="45.8"><circle cx="22.9" cy="22.9" r="22.9" stroke="none" stroke-width="0" fill="#74C837"></circle><text class="circle-text" x="22.9" y="22.9" font-size="13.74" fill="white" text-anchor="middle" dy=".3em">86</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2731dac3694b3289cd903cb3acf" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">That’s So True</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Gracie Abrams</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:46</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="48.8" width="48.8"><circle cx="24.4" cy="24.4" r="24.4" stroke="none" stroke-width="0" fill="#35BD4B"></circle><text class="circle-text" x="24.4" y="24.4" font-size="14.64" fill="white" text-anchor="middle" dy=".3em">96</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2735074bd0894cb1340b8d8a678" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">toxic till the end</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">ROSÉ</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:37</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="46.4" width="46.4"><circle cx="23.2" cy="23.2" r="23.2" stroke="none" stroke-width="0" fill="#67C63B"></circle><text class="circle-text" x="23.2" y="23.2" font-size="13.92" fill="white" text-anchor="middle" dy=".3em">88</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273b42f7c00cad0723ad163292f" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Pretty Slowly</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Benson Boone</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">4:21</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="42.2" width="42.2"><circle cx="21.1" cy="21.1" r="21.1" stroke="none" stroke-width="0" fill="#BFD51F"></circle><text class="circle-text" x="21.1" y="21.1" font-size="12.66" fill="white" text-anchor="middle" dy=".3em">74</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b27309d6ed214f03fbb663e46531" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">luther (with sza)</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Kendrick Lamar</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:58</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="46.1" width="46.1"><circle cx="23.05" cy="23.05" r="23.05" stroke="none" stroke-width="0" fill="#6EC739"></circle><text class="circle-text" x="23.05" y="23.05" font-size="13.83" fill="white" text-anchor="middle" dy=".3em">87</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273c800e1a4a237cf8f085183c5" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">NEW DROP</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Don Toliver</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:37</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="45.2" width="45.2"><circle cx="22.6" cy="22.6" r="22.6" stroke="none" stroke-width="0" fill="#80CA33"></circle><text class="circle-text" x="22.6" y="22.6" font-size="13.56" fill="white" text-anchor="middle" dy=".3em">84</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2737f5a318e3ff35defa8d0e4af" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">BMF</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">SZA</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:01</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="46.1" width="46.1"><circle cx="23.05" cy="23.05" r="23.05" stroke="none" stroke-width="0" fill="#6EC739"></circle><text class="circle-text" x="23.05" y="23.05" font-size="13.83" fill="white" text-anchor="middle" dy=".3em">87</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273c0db065619ed208515412917" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">The Emptiness Machine</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Linkin Park</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:10</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="45.2" width="45.2"><circle cx="22.6" cy="22.6" r="22.6" stroke="none" stroke-width="0" fill="#80CA33"></circle><text class="circle-text" x="22.6" y="22.6" font-size="13.56" fill="white" text-anchor="middle" dy=".3em">84</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273a0cb974834e04f46b63b99a8" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Messy</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Lola Young</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">4:44</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="46.1" width="46.1"><circle cx="23.05" cy="23.05" r="23.05" stroke="none" stroke-width="0" fill="#6EC739"></circle><text class="circle-text" x="23.05" y="23.05" font-size="13.83" fill="white" text-anchor="middle" dy=".3em">87</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2738d345d8baf0c3899501a4bb3" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">PORNSTAR</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Nessa Barrett</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:29</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="43.1" width="43.1"><circle cx="21.55" cy="21.55" r="21.55" stroke="none" stroke-width="0" fill="#ACD225"></circle><text class="circle-text" x="21.55" y="21.55" font-size="12.93" fill="white" text-anchor="middle" dy=".3em">77</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b27391b4bc7c88d91a42e0f3a8b7" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Good Luck, Babe!</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Chappell Roan</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:38</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="47.6" width="47.6"><circle cx="23.8" cy="23.8" r="23.8" stroke="none" stroke-width="0" fill="#4EC143"></circle><text class="circle-text" x="23.8" y="23.8" font-size="14.28" fill="white" text-anchor="middle" dy=".3em">92</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2732fa3078d30095db125d905ec" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Burning Down (with Joe Jonas)</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Alex Warren</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:59</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="42.2" width="42.2"><circle cx="21.1" cy="21.1" r="21.1" stroke="none" stroke-width="0" fill="#BFD51F"></circle><text class="circle-text" x="21.1" y="21.1" font-size="12.66" fill="white" text-anchor="middle" dy=".3em">74</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b27394f662ef3b5677376d8a78d4" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Timeless (with Playboi Carti)</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">The Weeknd</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">4:16</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="47.6" width="47.6"><circle cx="23.8" cy="23.8" r="23.8" stroke="none" stroke-width="0" fill="#4EC143"></circle><text class="circle-text" x="23.8" y="23.8" font-size="14.28" fill="white" text-anchor="middle" dy=".3em">92</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273e67611dbbf69a90d0b6cb738" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">i like the way you kiss me</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Artemas</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:23</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="44.9" width="44.9"><circle cx="22.45" cy="22.45" r="22.45" stroke="none" stroke-width="0" fill="#87CB31"></circle><text class="circle-text" x="22.45" y="22.45" font-size="13.47" fill="white" text-anchor="middle" dy=".3em">83</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2735e1ec3f6b114e4e4924f006f" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Taste</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Sabrina Carpenter</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:37</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="43.7" width="43.7"><circle cx="21.85" cy="21.85" r="21.85" stroke="none" stroke-width="0" fill="#A0D029"></circle><text class="circle-text" x="21.85" y="21.85" font-size="13.11" fill="white" text-anchor="middle" dy=".3em">79</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b27380de639ebda5b64a53dbab5d" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">DEGENERE 👑 (feat. benny blanco)</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Myke Towers</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:11</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="43.4" width="43.4"><circle cx="21.7" cy="21.7" r="21.7" stroke="none" stroke-width="0" fill="#A6D127"></circle><text class="circle-text" x="21.7" y="21.7" font-size="13.02" fill="white" text-anchor="middle" dy=".3em">78</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2738ad20aef4c717994ec4ede86" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Hello Miss Johnson</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Jack Harlow</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:45</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="42.8" width="42.8"><circle cx="21.4" cy="21.4" r="21.4" stroke="none" stroke-width="0" fill="#B2D323"></circle><text class="circle-text" x="21.4" y="21.4" font-size="12.84" fill="white" text-anchor="middle" dy=".3em">76</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273acf8ff27be32aec99d6c99a0" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Strategy (feat. Megan Thee Stallion)</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">TWICE</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:22</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="44.3" width="44.3"><circle cx="22.15" cy="22.15" r="22.15" stroke="none" stroke-width="0" fill="#93CE2D"></circle><text class="circle-text" x="22.15" y="22.15" font-size="13.29" fill="white" text-anchor="middle" dy=".3em">81</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2736ed4e3321895cba2133e50a2" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Bundle By Bundle</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Burna Boy</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:56</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="40.7" width="40.7"><circle cx="20.35" cy="20.35" r="20.35" stroke="none" stroke-width="0" fill="#DEDB15"></circle><text class="circle-text" x="20.35" y="20.35" font-size="12.21" fill="white" text-anchor="middle" dy=".3em">69</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2734e5a5862355a5e953549292b" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Diet Pepsi</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Addison Rae</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:50</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="45.5" width="45.5"><circle cx="22.75" cy="22.75" r="22.75" stroke="none" stroke-width="0" fill="#7AC935"></circle><text class="circle-text" x="22.75" y="22.75" font-size="13.65" fill="white" text-anchor="middle" dy=".3em">85</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273f5ac5b7a18587bcd0cddd886" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Are You Even Real (feat. Givēon)</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Teddy Swims</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:28</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="39.5" width="39.5"><circle cx="19.75" cy="19.75" r="19.75" stroke="none" stroke-width="0" fill="#EDDA11"></circle><text class="circle-text" x="19.75" y="19.75" font-size="11.85" fill="white" text-anchor="middle" dy=".3em">65</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b27355a1e72ba425c60a02a9bb47" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Sympathy is a knife featuring ariana grande</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Charli xcx</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:34</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="41.9" width="41.9"><circle cx="20.95" cy="20.95" r="20.95" stroke="none" stroke-width="0" fill="#C5D61D"></circle><text class="circle-text" x="20.95" y="20.95" font-size="12.57" fill="white" text-anchor="middle" dy=".3em">73</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273b245099fe26319344ddf6054" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">DENIAL IS A RIVER</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Doechii</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:40</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="44.6" width="44.6"><circle cx="22.3" cy="22.3" r="22.3" stroke="none" stroke-width="0" fill="#8DCC2F"></circle><text class="circle-text" x="22.3" y="22.3" font-size="13.38" fill="white" text-anchor="middle" dy=".3em">82</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2736a8a6ad5453f5d19ec4295f9" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Pressure</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">RÜFÜS DU SOL</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">4:39</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="37.1" width="37.1"><circle cx="18.55" cy="18.55" r="18.55" stroke="none" stroke-width="0" fill="#EDC611"></circle><text class="circle-text" x="18.55" y="18.55" font-size="11.13" fill="white" text-anchor="middle" dy=".3em">57</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273a5d1584c74776a69ad4991cc" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">fancy</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Artemas</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:06</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="40.7" width="40.7"><circle cx="20.35" cy="20.35" r="20.35" stroke="none" stroke-width="0" fill="#DEDB15"></circle><text class="circle-text" x="20.35" y="20.35" font-size="12.21" fill="white" text-anchor="middle" dy=".3em">69</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273f5e27c2aa0b110c2b6611577" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">No Pole</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Don Toliver</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:08</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="45.8" width="45.8"><circle cx="22.9" cy="22.9" r="22.9" stroke="none" stroke-width="0" fill="#74C837"></circle><text class="circle-text" x="22.9" y="22.9" font-size="13.74" fill="white" text-anchor="middle" dy=".3em">86</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b27388e3822cccfb8f2832c70c2e" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Apple</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Charli xcx</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:32</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="44.6" width="44.6"><circle cx="22.3" cy="22.3" r="22.3" stroke="none" stroke-width="0" fill="#8DCC2F"></circle><text class="circle-text" x="22.3" y="22.3" font-size="13.38" fill="white" text-anchor="middle" dy=".3em">82</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273a2f04cd16c327c6aa04be8c1" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Never Going Home Tonight (feat. Madison Love)</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">David Guetta</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:44</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="42.8" width="42.8"><circle cx="21.4" cy="21.4" r="21.4" stroke="none" stroke-width="0" fill="#B2D323"></circle><text class="circle-text" x="21.4" y="21.4" font-size="12.84" fill="white" text-anchor="middle" dy=".3em">76</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2738b58d20f1b77295730db15b4" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">we can't be friends (wait for your love)</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Ariana Grande</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:49</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="46.1" width="46.1"><circle cx="23.05" cy="23.05" r="23.05" stroke="none" stroke-width="0" fill="#6EC739"></circle><text class="circle-text" x="23.05" y="23.05" font-size="13.83" fill="white" text-anchor="middle" dy=".3em">87</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273417f8c5927888d7ee97cb05a" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Forever Young</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">David Guetta</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:37</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="44" width="44"><circle cx="22" cy="22" r="22" stroke="none" stroke-width="0" fill="#99CF2B"></circle><text class="circle-text" x="22" y="22" font-size="13.2" fill="white" text-anchor="middle" dy=".3em">80</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273e6065f209e0a01986206bd53" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Sailor Song</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Gigi Perez</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:32</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="47.9" width="47.9"><circle cx="23.95" cy="23.95" r="23.95" stroke="none" stroke-width="0" fill="#48C045"></circle><text class="circle-text" x="23.95" y="23.95" font-size="14.37" fill="white" text-anchor="middle" dy=".3em">93</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2731a2c9ac2d39bc5c2e22b9555" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Pink Skies</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Zach Bryan</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:15</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="45.2" width="45.2"><circle cx="22.6" cy="22.6" r="22.6" stroke="none" stroke-width="0" fill="#80CA33"></circle><text class="circle-text" x="22.6" y="22.6" font-size="13.56" fill="white" text-anchor="middle" dy=".3em">84</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2731a0323cc23419360a34a3ace" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">The Door</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Teddy Swims</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:33</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="45.8" width="45.8"><circle cx="22.9" cy="22.9" r="22.9" stroke="none" stroke-width="0" fill="#74C837"></circle><text class="circle-text" x="22.9" y="22.9" font-size="13.74" fill="white" text-anchor="middle" dy=".3em">86</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b27380d86d636244b72a3a1eede2" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">A Bar Song (Tipsy)</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Shaboozey</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:51</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="45.8" width="45.8"><circle cx="22.9" cy="22.9" r="22.9" stroke="none" stroke-width="0" fill="#74C837"></circle><text class="circle-text" x="22.9" y="22.9" font-size="13.74" fill="white" text-anchor="middle" dy=".3em">86</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2734ccf88b66e04cfd247f287eb" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Austin (Boots Stop Workin')</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Dasha</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:52</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="45.8" width="45.8"><circle cx="22.9" cy="22.9" r="22.9" stroke="none" stroke-width="0" fill="#74C837"></circle><text class="circle-text" x="22.9" y="22.9" font-size="13.74" fill="white" text-anchor="middle" dy=".3em">86</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2730e4e16d910115fead3e83496" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Chill Bae</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Lil Uzi Vert</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:18</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="41.6" width="41.6"><circle cx="20.8" cy="20.8" r="20.8" stroke="none" stroke-width="0" fill="#CBD81B"></circle><text class="circle-text" x="20.8" y="20.8" font-size="12.48" fill="white" text-anchor="middle" dy=".3em">72</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273fb769724a2ee34b9f4ba1c76" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Gang Baby</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">NLE Choppa</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:18</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="44.6" width="44.6"><circle cx="22.3" cy="22.3" r="22.3" stroke="none" stroke-width="0" fill="#8DCC2F"></circle><text class="circle-text" x="22.3" y="22.3" font-size="13.38" fill="white" text-anchor="middle" dy=".3em">82</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273778c1e4660aa23f6728b32a1" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Illusion</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Dua Lipa</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:08</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="42.5" width="42.5"><circle cx="21.25" cy="21.25" r="21.25" stroke="none" stroke-width="0" fill="#B9D421"></circle><text class="circle-text" x="21.25" y="21.25" font-size="12.75" fill="white" text-anchor="middle" dy=".3em">75</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273c944a2c490ed24e29eef5119" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Indigo (feat. Avery Anna)</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Sam Barber</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">4:47</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="44.6" width="44.6"><circle cx="22.3" cy="22.3" r="22.3" stroke="none" stroke-width="0" fill="#8DCC2F"></circle><text class="circle-text" x="22.3" y="22.3" font-size="13.38" fill="white" text-anchor="middle" dy=".3em">82</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2732f479a6c1825c1f29e0a3d49" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">I Don't Wanna Wait</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">David Guetta</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:30</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="45.2" width="45.2"><circle cx="22.6" cy="22.6" r="22.6" stroke="none" stroke-width="0" fill="#80CA33"></circle><text class="circle-text" x="22.6" y="22.6" font-size="13.56" fill="white" text-anchor="middle" dy=".3em">84</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2731d856e66d33e22746c21a09c" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Lose Control</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Teddy Swims</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:31</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="44.3" width="44.3"><circle cx="22.15" cy="22.15" r="22.15" stroke="none" stroke-width="0" fill="#93CE2D"></circle><text class="circle-text" x="22.15" y="22.15" font-size="13.29" fill="white" text-anchor="middle" dy=".3em">81</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2739a903819d8a5d3c80c47734c" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Stumblin' In</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">CYRIL</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:33</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="45.2" width="45.2"><circle cx="22.6" cy="22.6" r="22.6" stroke="none" stroke-width="0" fill="#80CA33"></circle><text class="circle-text" x="22.6" y="22.6" font-size="13.56" fill="white" text-anchor="middle" dy=".3em">84</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273ef985ba96e76a9574cc68a30" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Love Me Not</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Ravyn Lenae</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:33</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="38.9" width="38.9"><circle cx="19.45" cy="19.45" r="19.45" stroke="none" stroke-width="0" fill="#EDD511"></circle><text class="circle-text" x="19.45" y="19.45" font-size="11.67" fill="white" text-anchor="middle" dy=".3em">63</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273f2cd132495d61b0da6a900d2" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">KEHLANI</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Jordan Adetunji</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:02</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="44.9" width="44.9"><circle cx="22.45" cy="22.45" r="22.45" stroke="none" stroke-width="0" fill="#87CB31"></circle><text class="circle-text" x="22.45" y="22.45" font-size="13.47" fill="white" text-anchor="middle" dy=".3em">83</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b27388e3822cccfb8f2832c70c2e" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">365</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Charli xcx</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:24</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="42.8" width="42.8"><circle cx="21.4" cy="21.4" r="21.4" stroke="none" stroke-width="0" fill="#B2D323"></circle><text class="circle-text" x="21.4" y="21.4" font-size="12.84" fill="white" text-anchor="middle" dy=".3em">76</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2733ba70f49a78d818fc0758667" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Kisses (feat. bbyclose)</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">BL3SS</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:18</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="42.5" width="42.5"><circle cx="21.25" cy="21.25" r="21.25" stroke="none" stroke-width="0" fill="#B9D421"></circle><text class="circle-text" x="21.25" y="21.25" font-size="12.75" fill="white" text-anchor="middle" dy=".3em">75</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273cc04ff3e70e146ba9abacf40" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Slow It Down</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Benson Boone</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:42</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="45.2" width="45.2"><circle cx="22.6" cy="22.6" r="22.6" stroke="none" stroke-width="0" fill="#80CA33"></circle><text class="circle-text" x="22.6" y="22.6" font-size="13.56" fill="white" text-anchor="middle" dy=".3em">84</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2738009ae03e4e7d759a521c7e7" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">WE PRAY - Single Version</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Coldplay</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:53</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="41.9" width="41.9"><circle cx="20.95" cy="20.95" r="20.95" stroke="none" stroke-width="0" fill="#C5D61D"></circle><text class="circle-text" x="20.95" y="20.95" font-size="12.57" fill="white" text-anchor="middle" dy=".3em">73</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2732538afd3580d0424bbe28a01" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Mamushi (feat. Yuki Chiba)</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Megan Thee Stallion</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:37</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="43.1" width="43.1"><circle cx="21.55" cy="21.55" r="21.55" stroke="none" stroke-width="0" fill="#ACD225"></circle><text class="circle-text" x="21.55" y="21.55" font-size="12.93" fill="white" text-anchor="middle" dy=".3em">77</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2736eb604294f8f58c9078f58b1" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Whiplash</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">aespa</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:03</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="43.4" width="43.4"><circle cx="21.7" cy="21.7" r="21.7" stroke="none" stroke-width="0" fill="#A6D127"></circle><text class="circle-text" x="21.7" y="21.7" font-size="13.02" fill="white" text-anchor="middle" dy=".3em">78</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273c67636f3021f5869095c0fc5" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">one of wun</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Gunna</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:24</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="44.6" width="44.6"><circle cx="22.3" cy="22.3" r="22.3" stroke="none" stroke-width="0" fill="#8DCC2F"></circle><text class="circle-text" x="22.3" y="22.3" font-size="13.38" fill="white" text-anchor="middle" dy=".3em">82</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b2734b8b52a487c842534619501a" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Thick Of It (feat. Trippie Redd)</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">KSI</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:41</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="42.8" width="42.8"><circle cx="21.4" cy="21.4" r="21.4" stroke="none" stroke-width="0" fill="#B2D323"></circle><text class="circle-text" x="21.4" y="21.4" font-size="12.84" fill="white" text-anchor="middle" dy=".3em">76</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b273778c1e4660aa23f6728b32a1" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Houdini</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Dua Lipa</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">3:06</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="44.9" width="44.9"><circle cx="22.45" cy="22.45" r="22.45" stroke="none" stroke-width="0" fill="#87CB31"></circle><text class="circle-text" x="22.45" y="22.45" font-size="13.47" fill="white" text-anchor="middle" dy=".3em">83</text></svg></td></tr>
+    <tr><td headers="album_art" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><img src="https://i.scdn.co/image/ab67616d0000b27351ef67c49732e45cd2b26fbe" style="height:50px;"></td>
+<td headers="song_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Scared To Start</td>
+<td headers="artist_name" class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">Michael Marcagi</td>
+<td headers="track_duration" class="gt_row gt_right" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;">2:40</td>
+<td headers="popularity" class="gt_row gt_center" style="border-top-width: 0px; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: #000000;"><svg height="44.9" width="44.9"><circle cx="22.45" cy="22.45" r="22.45" stroke="none" stroke-width="0" fill="#87CB31"></circle><text class="circle-text" x="22.45" y="22.45" font-size="13.47" fill="white" text-anchor="middle" dy=".3em">83</text></svg></td></tr>
+  </tbody>
+  <tfoot class="gt_sourcenotes">
+    <tr>
+      <td class="gt_sourcenote" colspan="5"><span data-qmd-base64="PHN0cm9uZz5Tb3VyY2U6PC9zdHJvbmc+IDxhIGhyZWY9Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC81aXdrWWZuSEFHTUVGTGlIRkZHblA0Ij5Ub2RheeKAmXMgVG9wIFNvbmdzIFBsYXlsaXN0PC9hPiwgZnJvbSB0aGUgU3BvdGlmeSBXZWIgQVBJ"><span class="gt_from_md"><strong>Source:</strong> <a href="https://open.spotify.com/playlist/5iwkYfnHAGMEFLiHFFGnP4">Today’s Top Songs Playlist</a>, from the Spotify Web API</span></span></td>
+    </tr>
+  </tfoot>
+  <tfoot class="gt_footnotes">
+    <tr>
+      <td class="gt_footnote" colspan="5"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> The popularity of a track is a value between 0 and 100, with 100 being the most popular. The popularity is calculated by algorithm and is based, in the most part, on the total number of plays the track has had and how recent those plays are.
+Generally speaking, songs that are being played a lot now will have a higher popularity than songs that were played a lot in the past.</td>
+    </tr>
+  </tfoot>
+</table>
 </div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-<div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div><div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 10fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="card-body html-fill-item html-fill-container">
-<div class="cell-output cell-output-stdout html-fill-item html-fill-container">
-<pre><code>[1] "My username is: thisismyusername"</code></pre>
+<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb1" data-startfrom="200" data-source-offset="-48"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 199;"><span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>top_hits <span class="op">=</span> <span class="fu">transpose</span>(top_hits_ojs)</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a><span class="co">// Create a dropdown menu of the songs</span></span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>viewof songDropdown <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>  top_hits<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">song_name</span>)<span class="op">,</span></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Choose a song"</span><span class="op">,</span></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>    <span class="dt">unique</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div id="ojs-cell-1-1" data-nodetype="declaration" class="html-fill-item html-fill-container">
+
 </div>
 </div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div id="ojs-cell-1-2" data-nodetype="declaration" class="html-fill-item html-fill-container">
+
+</div>
+</div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
 </div><div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 10fr) minmax(3em, 70fr) minmax(3em, 20fr); grid-auto-columns: minmax(0, 1fr);">
 <div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
-<div class="card bslib-card html-fill-container" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="card-body html-fill-item html-fill-container">
-<p>Placeholder text for column 2, row 1</p>
+<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb2" data-startfrom="227" data-source-offset="-48"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 226;"><span id="cb2-227"><a href="#cb2-227" aria-hidden="true" tabindex="-1"></a>top_hits <span class="op">=</span> <span class="fu">transpose</span>(top_hits_ojs)</span>
+<span id="cb2-228"><a href="#cb2-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-229"><a href="#cb2-229" aria-hidden="true" tabindex="-1"></a><span class="co">// Create a dropdown menu of the songs</span></span>
+<span id="cb2-230"><a href="#cb2-230" aria-hidden="true" tabindex="-1"></a>viewof songDropdown <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
+<span id="cb2-231"><a href="#cb2-231" aria-hidden="true" tabindex="-1"></a>  top_hits<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">song_name</span>)<span class="op">,</span></span>
+<span id="cb2-232"><a href="#cb2-232" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb2-233"><a href="#cb2-233" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Choose a song"</span><span class="op">,</span></span>
+<span id="cb2-234"><a href="#cb2-234" aria-hidden="true" tabindex="-1"></a>    <span class="dt">unique</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb2-235"><a href="#cb2-235" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-236"><a href="#cb2-236" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div id="ojs-cell-2-1" data-nodetype="declaration" class="html-fill-item html-fill-container">
+
 </div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div>
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div id="ojs-cell-2-2" data-nodetype="declaration" class="html-fill-item html-fill-container">
+
+</div>
+</div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
 <div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
-<div class="card bslib-card html-fill-container" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="card-body html-fill-item html-fill-container">
-<p>Placeholder text for column 2, row 2</p>
+<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb3" data-startfrom="246" data-source-offset="-52"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 245;"><span id="cb3-246"><a href="#cb3-246" aria-hidden="true" tabindex="-1"></a>selectedSong <span class="op">=</span> songDropdown<span class="op">;</span></span>
+<span id="cb3-247"><a href="#cb3-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-248"><a href="#cb3-248" aria-hidden="true" tabindex="-1"></a><span class="co">// Find the song_id based on the selected song_name</span></span>
+<span id="cb3-249"><a href="#cb3-249" aria-hidden="true" tabindex="-1"></a>selectedSongId <span class="op">=</span> top_hits<span class="op">.</span><span class="fu">find</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">song_name</span> <span class="op">===</span> selectedSong)<span class="op">?.</span><span class="at">song_id</span><span class="op">;</span></span>
+<span id="cb3-250"><a href="#cb3-250" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-251"><a href="#cb3-251" aria-hidden="true" tabindex="-1"></a><span class="co">// Embed the iframe with the dynamic song_id</span></span>
+<span id="cb3-252"><a href="#cb3-252" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span></span>
+<span id="cb3-253"><a href="#cb3-253" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;iframe style="border-radius:12px" </span></span>
+<span id="cb3-254"><a href="#cb3-254" aria-hidden="true" tabindex="-1"></a><span class="vs">          src="https://open.spotify.com/embed/track/</span><span class="sc">${</span>selectedSongId<span class="sc">}</span><span class="vs">?utm_source=generator&amp;theme=0" </span></span>
+<span id="cb3-255"><a href="#cb3-255" aria-hidden="true" tabindex="-1"></a><span class="vs">          width="100%" </span></span>
+<span id="cb3-256"><a href="#cb3-256" aria-hidden="true" tabindex="-1"></a><span class="vs">          height="352" </span></span>
+<span id="cb3-257"><a href="#cb3-257" aria-hidden="true" tabindex="-1"></a><span class="vs">          frameBorder="0" </span></span>
+<span id="cb3-258"><a href="#cb3-258" aria-hidden="true" tabindex="-1"></a><span class="vs">          allowfullscreen="" </span></span>
+<span id="cb3-259"><a href="#cb3-259" aria-hidden="true" tabindex="-1"></a><span class="vs">          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" </span></span>
+<span id="cb3-260"><a href="#cb3-260" aria-hidden="true" tabindex="-1"></a><span class="vs">          loading="lazy"&gt;</span></span>
+<span id="cb3-261"><a href="#cb3-261" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/iframe&gt;</span></span>
+<span id="cb3-262"><a href="#cb3-262" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div id="ojs-cell-3-1" data-nodetype="declaration" class="html-fill-item html-fill-container">
+
 </div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div>
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div id="ojs-cell-3-2" data-nodetype="declaration" class="html-fill-item html-fill-container">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div id="ojs-cell-3-3" data-nodetype="expression" class="html-fill-item html-fill-container">
+
+</div>
+</div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
 <div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
-<div class="card bslib-card html-fill-container" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="card-body html-fill-item html-fill-container">
-<p>Placeholder text for column 2, row 3</p>
+<div style="background-color: #7D3C98; color: white; border-radius: 10px; padding: 10px; text-align: center; display: flex; align-items: center; justify-content: center; height: 100%;" class="html-fill-item html-fill-container">
+<span style="font-size: 1vw; width: 100%;"> <strong>Want to make a project like this?</strong> This dashboard was created by <a href="https://www.melissavanbussel.com/">Melissa Van Bussel</a> for <a href="https://posit.co/blog/announcing-the-2024-table-contest/">Posit’s 2024 Table Contest</a>.<br> You can find a tutorial for this dashboard <a href="https://melissavanbussel.github.io/spotify-dashboard">here</a> and you can find the code that powers this dashboard <a href="https://github.com/melissavanbussel/spotify-dashboard">here</a>. </span>
 </div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden">
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden">
 
 </div>
 </div>
@@ -177,6 +1096,17 @@ grid-auto-rows: minmax(0, 1fr);">
 </div>
 
 
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gVHJhbnBvc2UgdGhlIGRhdGEgdG8gIG1ha2UgaXQgdXNhYmxlIGluIG9qc1xudG9wX2hpdHMgPSB0cmFuc3Bvc2UodG9wX2hpdHNfb2pzKVxuXG4vLyBDcmVhdGUgYSBkcm9wZG93biBtZW51IG9mIHRoZSBzb25nc1xudmlld29mIHNvbmdEcm9wZG93biA9IElucHV0cy5zZWxlY3QoXG4gIHRvcF9oaXRzLm1hcChkID0+IGQuc29uZ19uYW1lKSxcbiAge1xuICAgIGxhYmVsOiBcIkNob29zZSBhIHNvbmdcIixcbiAgICB1bmlxdWU6IHRydWVcbiAgfVxuKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG4vLyBUcmFuc3Bvc2UgdGhlIGRhdGEgdG8gbWFrZSBpdCB1c2FibGUgaW4gb2pzXG50b3BfaGl0cyA9IHRyYW5zcG9zZSh0b3BfaGl0c19vanMpXG5cbi8vIENyZWF0ZSBhIGRyb3Bkb3duIG1lbnUgb2YgdGhlIHNvbmdzXG52aWV3b2Ygc29uZ0Ryb3Bkb3duID0gSW5wdXRzLnNlbGVjdChcbiAgdG9wX2hpdHMubWFwKGQgPT4gZC5zb25nX25hbWUpLFxuICB7XG4gICAgbGFiZWw6IFwiQ2hvb3NlIGEgc29uZ1wiLFxuICAgIHVuaXF1ZTogdHJ1ZVxuICB9XG4pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJcbi8vIENyZWF0ZSBhIHJlYWN0aXZlIGJpbmRpbmcgZm9yIHRoZSBzZWxlY3RlZCBzb25nXG5zZWxlY3RlZFNvbmcgPSBzb25nRHJvcGRvd247XG5cbi8vIEZpbmQgdGhlIHNvbmdfaWQgYmFzZWQgb24gdGhlIHNlbGVjdGVkIHNvbmdfbmFtZVxuc2VsZWN0ZWRTb25nSWQgPSB0b3BfaGl0cy5maW5kKGQgPT4gZC5zb25nX25hbWUgPT09IHNlbGVjdGVkU29uZyk/LnNvbmdfaWQ7XG5cbi8vIEVtYmVkIHRoZSBpZnJhbWUgd2l0aCB0aGUgZHluYW1pYyBzb25nX2lkXG5odG1sYFxuICA8aWZyYW1lIHN0eWxlPVwiYm9yZGVyLXJhZGl1czoxMnB4XCIgXG4gICAgICAgICAgc3JjPVwiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL2VtYmVkL3RyYWNrLyR7c2VsZWN0ZWRTb25nSWR9P3V0bV9zb3VyY2U9Z2VuZXJhdG9yJnRoZW1lPTBcIiBcbiAgICAgICAgICB3aWR0aD1cIjEwMCVcIiBcbiAgICAgICAgICBoZWlnaHQ9XCIzNTJcIiBcbiAgICAgICAgICBmcmFtZUJvcmRlcj1cIjBcIiBcbiAgICAgICAgICBhbGxvd2Z1bGxzY3JlZW49XCJcIiBcbiAgICAgICAgICBhbGxvdz1cImF1dG9wbGF5OyBjbGlwYm9hcmQtd3JpdGU7IGVuY3J5cHRlZC1tZWRpYTsgZnVsbHNjcmVlbjsgcGljdHVyZS1pbi1waWN0dXJlXCIgXG4gICAgICAgICAgbG9hZGluZz1cImxhenlcIj5cbiAgPC9pZnJhbWU+XG5gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NvbmdEcm9wZG93bicpIn1dfQ==
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../..";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -267,7 +1197,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/EconMaett\.github\.io\/spotify-dashboard\/");
+      var filterRegex = new RegExp("https:\/\/melissavanbussel\.github\.io\/spotify-dashboard");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -596,7 +1526,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 </div> <!-- /content -->
 
-<script type="application/javascript">
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/melissavanbussel/spotify-dashboard/edit/main/dashboard.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/melissavanbussel/spotify-dashboard/blob/main/dashboard.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/melissavanbussel/spotify-dashboard/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (_event) {
   if (window.bslib.Card) {
     window.bslib.Card.initializeAllCards();
