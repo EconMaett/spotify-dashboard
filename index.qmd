@@ -4,6 +4,6 @@ title: "Spotify Dashboard"
 
 This dashboard is based on Melissa van Bussen's submission to the Posit PBC's Table Contest. The interactive Quarto dashboard displays the [Today's Top Songs](https://open.spotify.com/playlist/5iwkYfnHAGMEFLiHFFGnP4) playlist from Spotify. The dashboard also includes an embedded Spotify web player, so you can hear the song directly in your browser! Although it's got an interactive dropdown menu, it didn't require a Shiny server -- it's all powered by Quarto + Observable JS + GitHub Actions + GitHub Pages. It updates itself automatically everyday at 9am, it was completely free to create and host, and it never needs to be run locally (unless you want to run it locally). 
 
-Note that the [some of the Spotify API endpoints are no longer supported](https://developer.spotify.com/blog/2024-11-27-changes-to-the-web-api).
+Note that [some of the Spotify API endpoints are no longer supported](https://developer.spotify.com/blog/2024-11-27-changes-to-the-web-api).
 
 I used this project as an excuse to teach myself some of the trickier concepts that have been on my "to learn" list for a while now. Specifically, I wanted to learn how to create interactive dashboards that didn't rely on Shiny, how to make `{gt}` tables interactive using the `cols_nanoplot()` function, and how to safely store passwords / API keys / etc. for my GitHub projects and do authentication as part of GitHub Actions workflows. 
