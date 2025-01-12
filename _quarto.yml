@@ -5,20 +5,20 @@ website:
   title: "Spotify Dashboard"
   favicon: images/logo.png
   page-navigation: true
-  site-url: https://melissavanbussel.github.io/spotify-dashboard
-  repo-url: https://github.com/melissavanbussel/spotify-dashboard
+  site-url: https://econmaett.github.io/spotify-dashboard
+  repo-url: https://github.com/econmaett/spotify-dashboard
   repo-actions: [edit, source, issue]
   sidebar:
-    title: "Posit 2024 Table Contest"
+    title: "Spotify Dashboard"
     style: "docked"
-    search: true
+    search: false
     collapse-level: 1
     logo: images/logo.png
     contents: 
       - href: index.qmd
         text: Home
       - href: dashboard.qmd
-        text: My entry
+        text: Dashboard
 
 format:
   html:
